@@ -373,100 +373,123 @@ header a {
 ----------------*/
 
 #teams-cta h2 {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+#teams-cta {
+    padding-bottom: 100px;
 }
 
 /* ---------------
     COMPANIES
 ----------------*/
 
-#companies {
-    margin-top: 100px;
-    display: block;
-}
-
-.companies-section {
-    width: calc(100vw / 3);
-}
-
-.companies {
-    flex-wrap: wrap;
-    height: calc(100vw / 3);
-}
-
-.company-selected {
-    border: 15px solid rgba(255, 255, 255, 0.299);
-}
-
-.company-focus {
-    background-color: #F5F5F5;
-    padding: 30px;
-    height: calc(100vw / 3);
-    overflow: scroll
-}
-
-.company-focus hr {
-    margin-block: 20px;
-}
-
-.company-logo-focus {
-    width: 50%;
-}
-
-.company-logo-focus svg {
-    width: 100%;
-}
-
-.company {
-    width: calc(100vw / 6);
-    height: calc(100vw / 6);
+.conteiner-companies {
+    display: flex;
     justify-content: center;
-    align-items: center;
+    max-height: 650px;
+    max-width: 100%;
 }
 
-.company svg {
+.box-1 {
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 33%;
+    text-align: center;
+    background-color: red;
+    justify-content: center;
+}
+
+.box-1 img {
+    width: 200px;
+    padding-top: 125px;
+}
+
+.companies-1 {
+    background-color: lightgreen;
     width: 50%;
-    fill: white;
+    height: 50%;
 }
 
-/* ---------------
-    COMPANIES BACKGROUND
-----------------*/
-
-.companies-left .company:first-child {
-    background-color: #A2D39B;
-}
-
-.companies-left .company:nth-child(2) {
+.companies-2 {
     background-color: #61082B;
+    width: 50%;
+    height: 50%;
 }
 
-.companies-left .company:nth-child(3) {
+.companies-3 {
     background-color: #0093CE;
+    width: 50%;
+    height: 50%;
 }
 
-/* .companies-left .company:nth-child(3) svg {
-    max-width: 195px;
-} */
-
-.companies-left .company:nth-child(4) {
+.companies-4 {
     background-color: #FF1C1C;
+    width: 50%;
+    height: 50%;
 }
 
-.companies-right .company:first-child {
-    background-color: #D5011F;
+.box-2 {
+    width: 33%;
+    background-color: #F5F5F5;
+    text-align: center;
+    padding: 50px;
 }
 
-.companies-right .company:nth-child(2) {
+.box-2 img {
+    padding-bottom: 50px;
+}
+
+.box-2 hr {
+    max-width: 20%;
+    filter: opacity(0.3);
+}
+
+.box-2 p {
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    text-align: left;
+}
+
+.box-3 {
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 33%;
+    text-align: center;
+    background-color: red;
+    justify-content: center;
+}
+
+.box-3 img {
+    width: 200px;
+    padding-top: 125px;
+}
+
+.companies-5 {
+    background-color: #D5001F;
+    width: 50%;
+    height: 50%;
+}
+
+.companies-6 {
     background-color: #B4D0E7;
+    width: 50%;
+    height: 50%;
 }
 
-.companies-right .company:nth-child(3) {
+.companies-7 {
     background-color: #0D2481;
+    width: 50%;
+    height: 50%;
 }
 
-.companies-right .company:nth-child(4) {
-    background-color: #FFD82F;
+.companies-8 {
+    background-color: #FFD830;
+    width: 50%;
+    height: 50%;
 }
 
 /* ---------------
