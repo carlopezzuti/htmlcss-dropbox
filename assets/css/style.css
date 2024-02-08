@@ -1,0 +1,588 @@
+/* ---------------
+    RESET
+----------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* border: 1px dashed black; */
+}
+
+.flex-container {
+    display: flex;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.norm-img {
+    width: 100%;
+}
+
+/* ---------------
+    BUTTON
+----------------*/
+
+.btn {
+    border: none;
+    padding: 8px 20px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.btn:hover {
+    opacity: 70%;
+}
+
+.btn-blue {
+    background-color: #0061FF;
+    color: white;
+}
+
+.btn-white {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+#company-cta .btn-white {
+    border: none;
+}
+
+/* ---------------
+    TYPOGRAPHY
+----------------*/
+
+html {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+p {
+    font-weight: 300;
+}
+
+/* ---------------
+    HEADER
+----------------*/
+
+header {
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1%;
+    height: 80px;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+}
+
+.header-ul {
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    height: 100%;
+}
+
+header li {
+    padding-block: calc((80px - 1em - 2px) / 2);
+}
+
+.hover-select:hover {
+    border-bottom: 2px inset #0061FF;
+    padding-bottom: calc(((80px - 1em - 2px) / 2) - 2px);
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(99, 99, 99);
+    font-weight: 300;
+    padding-top: 50px;
+}
+
+/* ---------------
+    JUMBO
+----------------*/
+
+#jumbo {
+    background-color: #B4D0E7;
+    padding-inline: 20%;
+    padding-top: 160px;
+    margin-bottom: 170px;
+}
+
+#jumbo>div {
+    padding-top: 50px;
+}
+
+#jumbo-cta {
+    flex-basis: 30%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 20px;
+    font-weight: 300;
+}
+
+#jumbo-cta button {
+    margin-block: 20px;
+}
+
+#jumbo-cta a {
+    margin-bottom: 15px;
+    font-size: 2em;
+    text-decoration: none;
+    color: black;
+}
+
+#jumbo-cta p {
+    color: rgb(99, 99, 99);
+}
+
+#jumbo figure {
+    flex-basis: 70%;
+    margin-bottom: -70px;
+}
+
+/* ---------------
+    MAIN
+----------------*/
+
+.main-section {
+    padding-inline: 23%;
+    margin-top: 100px;
+}
+
+/* ---------------
+    PLANS
+----------------*/
+
+#plans-title {
+    margin-block: 40px;
+    gap: 20px;
+}
+
+#plans-title h2 {
+    margin-bottom: 50px;
+}
+
+.card-type {
+    margin-top: 30px;
+}
+
+.card-type h5 {
+    margin-block: 15px;
+}
+
+.card-type p {
+    font-weight: 300;
+    color: rgb(99, 99, 99);
+}
+
+.cards {
+    gap: 5%;
+    justify-content: space-between;
+}
+
+.card-container {
+    width: calc((100% / 3) - 2.5%);
+}
+
+.card {
+    padding-inline: 8%;
+    border: 1px solid rgba(0, 0, 0, 0.084);
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+}
+
+.card-title {
+    border: 1px solid rgba(0, 0, 0, 0.084);
+    border-bottom: none;
+    text-align: center;
+    font-weight: 300;
+    padding-block: 7px;
+}
+
+.card li {
+    padding-block: 10px;
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+.card button {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.card hr {
+    margin-block: 30px;
+    width: 20%;
+    border: 0.5px solid rgba(0, 0, 0, 0.084);
+}
+
+.last-card {
+    justify-content: space-between;
+    padding-inline: 2%;
+    padding-block: 2%;
+    border: 1px solid rgba(0, 0, 0, 0.084);
+
+}
+
+#last-card {
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.last-card div:first-child {
+    flex-basis: 60%;
+}
+
+.last-card button {
+    margin-top: 20px;
+}
+
+#enterprise {
+    padding-block: 20px;
+}
+
+#enterprise h5 {
+    padding-block: 20px 50px;
+}
+
+/* ---------------
+    PLANS ICON
+----------------*/
+
+.benefits {
+    width: 100%;
+}
+
+.benefits li {
+    position: relative;
+    padding-left: 25px;
+    width: inherit;
+}
+
+.user::before {
+    content: '\f007';
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    width: 1em;
+    left: 0;
+}
+
+.storage::before {
+    content: '\f07b';
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    width: 1em;
+    left: 0;
+}
+
+.functions::before {
+    content: '\f1e0';
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    width: 1em;
+    left: 0;
+}
+
+.team::before {
+    content: '\f0c0';
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    width: 1em;
+    left: 0;
+}
+
+.check-list li {
+    position: relative;
+    padding-left: 25px;
+    width: inherit;
+}
+
+.check-list ul li::before {
+    content: '\f00c';
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #0061FF;
+    position: absolute;
+    width: 1em;
+    left: 0;
+}
+
+/* ---------------
+    PARTNER
+----------------*/
+
+.text-box {
+    padding-inline: 5%;
+    padding-top: 10%;
+    flex-basis: 80%;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* ---------------
+    BUSINESS
+----------------*/
+
+#business {
+    flex-direction: column;
+}
+
+.all-features {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3%;
+}
+
+.business-feature {
+    width: calc((100% / 3) - 3%);
+    margin-top: 50px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ---------------
+    CTA TEAMS
+----------------*/
+
+#teams-cta h2 {
+    margin-bottom: 50px;
+}
+
+/* ---------------
+    COMPANIES
+----------------*/
+
+#companies {
+    margin-top: 100px;
+    display: block;
+}
+
+.companies-section {
+    width: calc(100vw / 3);
+}
+
+.companies {
+    flex-wrap: wrap;
+    height: calc(100vw / 3);
+}
+
+.company-selected {
+    border: 15px solid rgba(255, 255, 255, 0.299);
+}
+
+.company-focus {
+    background-color: #F5F5F5;
+    padding: 30px;
+    height: calc(100vw / 3);
+    overflow: scroll
+}
+
+.company-focus hr {
+    margin-block: 20px;
+}
+
+.company-logo-focus {
+    width: 50%;
+}
+
+.company-logo-focus svg {
+    width: 100%;
+}
+
+.company {
+    width: calc(100vw / 6);
+    height: calc(100vw / 6);
+    justify-content: center;
+    align-items: center;
+}
+
+.company svg {
+    width: 50%;
+    fill: white;
+}
+
+/* ---------------
+    COMPANIES BACKGROUND
+----------------*/
+
+.companies-left .company:first-child {
+    background-color: #A2D39B;
+}
+
+.companies-left .company:nth-child(2) {
+    background-color: #61082B;
+}
+
+.companies-left .company:nth-child(3) {
+    background-color: #0093CE;
+}
+
+/* .companies-left .company:nth-child(3) svg {
+    max-width: 195px;
+} */
+
+.companies-left .company:nth-child(4) {
+    background-color: #FF1C1C;
+}
+
+.companies-right .company:first-child {
+    background-color: #D5011F;
+}
+
+.companies-right .company:nth-child(2) {
+    background-color: #B4D0E7;
+}
+
+.companies-right .company:nth-child(3) {
+    background-color: #0D2481;
+}
+
+.companies-right .company:nth-child(4) {
+    background-color: #FFD82F;
+}
+
+/* ---------------
+    CTA COMPANIES
+----------------*/
+
+#company-cta {
+    background-color: #B4D0E7;
+    margin-top: 0;
+    padding-block: 100px;
+    justify-content: space-between;
+}
+
+#company-cta h2 {
+    flex-basis: 50%;
+    color: #61142F;
+}
+
+#company-cta div {
+    flex-basis: 30%;
+}
+
+#company-cta button {
+    width: 100%;
+}
+
+/* ---------------
+    FAQ
+----------------*/
+
+#faq h2 {
+    margin-bottom: 40px;
+}
+
+#faq hr {
+    border-color: 0.5px solid rgba(0, 0, 0, 0.084);
+}
+
+.faq-answer {
+    display: none;
+    margin-block: 30px;
+}
+
+.faq-question {
+    margin-block: 30px;
+    justify-content: space-between;
+}
+
+.faq-question i {
+    margin-right: 50px;
+    font-size: 14px;
+}
+
+.faq-row:hover .faq-answer {
+    display: block;
+}
+
+.faq-row:hover .fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+/* ---------------
+    FOOTER
+----------------*/
+
+footer {
+    background-color: black;
+    color: white;
+    padding-inline: 20%;
+    padding-block: 70px 30px;
+    margin-top: 100px;
+}
+
+#footer-menu {
+    justify-content: space-between;
+}
+
+#footer-menu h4 {
+    margin-bottom: 20px;
+}
+
+#footer-menu li {
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+#footer-menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+#footer-menu li a:hover {
+    opacity: 0.7;
+}
+
+footer hr {
+    margin-block: 100px 30px;
+    width: 100px;
+}
+
+.languages::before {
+    content: '\f7a2';
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: rgb(255, 255, 255, 0.5);
+    margin-right: 15px;
+}
+
+.languages::after {
+    content: "\23f6";
+    margin-left: 15px;
+    font-size: 12px;
+}
+
+.languages {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 300;
+}
